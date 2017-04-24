@@ -11,10 +11,13 @@ public class Trees extends JPanel{
         RenderingHints renderHints = new RenderingHints(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         renderHints.put(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
 
+
+        //Draw Trees
         draw1Tree(100,500,g);
         draw1Tree(220,500,g);
         draw1Tree(340,500,g);
         draw1Tree(460,500,g);
+
     }
 
     @Override
@@ -24,10 +27,11 @@ public class Trees extends JPanel{
         drawTree(g);
     }
 
+
     /**
      * Draws 1 tree on a given location on a screen.
      */
-    public void draw1Tree(int x, int y, Graphics g)
+    private void draw1Tree(int x, int y, Graphics g)
     {
         Graphics2D g2d = (Graphics2D) g;
 
