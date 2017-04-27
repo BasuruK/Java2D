@@ -1,6 +1,3 @@
-import sun.reflect.generics.tree.Tree;
-
-import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.AffineTransform;
 

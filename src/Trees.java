@@ -12,7 +12,7 @@ public class Trees extends Road {
 
 
         //Draw Trees
-        for(int i = 0; i < 6; i++)
+        for(int i = 0; i < 18; i++)
         {
             draw1Tree(50 + (i * 100),505,g);
         }

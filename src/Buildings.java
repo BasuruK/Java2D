@@ -1,8 +1,7 @@
-import javax.swing.*;
 import java.awt.*;
 import java.util.Random;
 
-public class Buildings extends JPanel {
+public class Buildings extends Sky {
 
     public void drawBuilding(Graphics g)
     {

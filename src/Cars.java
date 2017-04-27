@@ -28,8 +28,6 @@ public class Cars extends Aeroplane {
                 drawNormalCar(50 +  (i * 200),g);
             }
         }
-//        drawNormalCar(200,g);
-//        drawASuperCar(500,g);
 
     }
 

@@ -1,3 +1,5 @@
+import com.sun.deploy.panel.PathRenderer;
+
 import javax.swing.*;
 
 public class BusyCity extends JFrame {
@@ -9,7 +11,7 @@ public class BusyCity extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
 
-        add(new Cars());
+        add(new Pedestrians());
 
     }
 
