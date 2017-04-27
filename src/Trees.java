@@ -1,9 +1,8 @@
 import java.awt.*;
-import java.util.Random;
 
 import javax.swing.*;
 
-public class Trees extends JPanel{
+public class Trees extends JPanel {
 
     private void drawTree(Graphics g)
     {
@@ -13,10 +12,10 @@ public class Trees extends JPanel{
 
 
         //Draw Trees
-        draw1Tree(100,500,g);
-        draw1Tree(220,500,g);
-        draw1Tree(340,500,g);
-        draw1Tree(460,500,g);
+        for(int i = 0; i < 6; i++)
+        {
+            draw1Tree(50 + (i * 100),540,g);
+        }
 
     }
 

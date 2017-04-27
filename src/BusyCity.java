@@ -9,7 +9,8 @@ public class BusyCity extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
 
-        add(new Road());
+        add(new Cars());
+
     }
 
     public static void main(String[] args)

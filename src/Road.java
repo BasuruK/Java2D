@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.AffineTransform;
 
@@ -11,7 +12,7 @@ public class Road extends Trees {
         //renderHints.put(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
 
         Graphics2D g2d = (Graphics2D) g;
-
+        AffineTransform old = g2d.getTransform();//Store the old state of the transform so that the entire document will stop rotating
         //Initialize the main road
         g2d.setPaint(new Color(7, 3, 2));
         g2d.fillRect(0,600,1800,300);
@@ -30,6 +31,11 @@ public class Road extends Trees {
             g2d.fillRect(i * 200,710,130,20);
         }
 
+        g2d.setTransform(old); // Restore the previous transform state
+
+        //Initiate Road-Ground Separator
+        g2d.setPaint(new Color(103, 103, 103));
+        g2d.fill3DRect(0,590,1800,25,true);
 
 
     }
