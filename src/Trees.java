@@ -2,7 +2,7 @@ import java.awt.*;
 
 import javax.swing.*;
 
-public class Trees extends JPanel {
+public class Trees extends Road {
 
     private void drawTree(Graphics g)
     {
@@ -14,7 +14,7 @@ public class Trees extends JPanel {
         //Draw Trees
         for(int i = 0; i < 6; i++)
         {
-            draw1Tree(50 + (i * 100),540,g);
+            draw1Tree(50 + (i * 100),505,g);
         }
 
     }

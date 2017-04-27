@@ -4,7 +4,7 @@ import java.awt.geom.AffineTransform;
 
 //The Road class extends Trees class which will mimic the effects of two or more panels being in the same JFrame.
 //because it is impossible to implement this in conventional ways.
-public class Road extends Trees {
+public class Road extends Buildings {
 
     private void drawRoad(Graphics g)
     {
@@ -36,6 +36,10 @@ public class Road extends Trees {
         //Initiate Road-Ground Separator
         g2d.setPaint(new Color(103, 103, 103));
         g2d.fill3DRect(0,590,1800,25,true);
+
+        //Initiate Pedestrian Walk
+        g2d.setPaint(new Color(103, 86, 57));
+        g2d.fill3DRect(0,540,1800,50,true);
 
 
     }
