@@ -8,7 +8,7 @@ public class Cars extends Aeroplane {
 
     public void drawCar(Graphics g)
     {
-        //Set Antialiasing Levels
+        //Set Anti-aliasing Levels
         RenderingHints renderHints = new RenderingHints(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         renderHints.put(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
 
