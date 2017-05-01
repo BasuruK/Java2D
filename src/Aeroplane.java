@@ -1,7 +1,6 @@
 import java.awt.*;
 import java.awt.geom.AffineTransform;
 
-
 public class Aeroplane extends Trees {
 
     public void drawAeroplane(Graphics g)

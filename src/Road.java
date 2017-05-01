@@ -1,9 +1,6 @@
-import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.AffineTransform;
 
-//The Road class extends Trees class which will mimic the effects of two or more panels being in the same JFrame.
-//because it is impossible to implement this in conventional ways.
 public class Road extends Buildings {
 
     private void drawRoad(Graphics g)

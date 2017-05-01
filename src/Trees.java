@@ -1,7 +1,5 @@
 import java.awt.*;
 
-import javax.swing.*;
-
 public class Trees extends Road {
 
     private void drawTree(Graphics g)
