@@ -34,7 +34,30 @@ public class BusStop extends Cars{
         g2d.drawString(string1.getIterator(),1138,510);
 
 
+        for(int i = 0;i < 9;i++)
+        {
+            drawStreetLight(32 + ( i * 200 ),g);
+        }
 
+
+    }
+
+    public void drawStreetLight(int x, Graphics g)
+    {
+        Graphics2D g2d = (Graphics2D) g;
+        //Initiate Light poles
+        //Light
+        g2d.setPaint(new Color(255, 252, 0));
+        g2d.fillOval(x+17,520,8,12);
+        //Light Handle
+        g2d.setPaint(new Color(40, 39, 39));
+        g2d.fillRect(x,520,25,5);
+        //Handle
+        g2d.setPaint(new Color(40, 39, 39));
+        g2d.fillRect(x,520,5,60);
+        //Base
+        g2d.setPaint(new Color(39, 24, 4));
+        g2d.fillRect(x-2,570,8,30);
     }
 
     @Override

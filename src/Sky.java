@@ -44,7 +44,9 @@ public class Sky extends JPanel {
 
         for(int i = 0; i < 100; i++)
         {
-            g2d.translate(Math.random() * 1000 + 20,Math.random() * 50 + 0);
+            g2d.translate(Math.random() * 1000 + 20,Math.random() * 500 + 0);
+            g2d.fill(star);
+            g2d.translate(Math.random() * 1000 + 20,Math.random() * 20 + 0);
             g2d.fill(star);
         }
 

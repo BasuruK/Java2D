@@ -88,6 +88,9 @@ public class Cars extends Aeroplane {
         //Tail Lights
         g2d.setPaint(new Color(0x240005));
         g2d.fillOval(x+2,642,10,8);
+        //Initiate Windows
+        g2d.setPaint(new Color(0xF1EE00));
+        g2d.fillRect(x+40,623,20,15);
 
 
 
@@ -132,6 +135,9 @@ public class Cars extends Aeroplane {
         //Tail Lights
         g2d.setPaint(new Color(0x240005));
         g2d.fillOval(x+2,642,10,8);
+        //Initiate Windows
+        g2d.setPaint(new Color(0xF1EE00));
+        g2d.fillRoundRect(x+40,626,20,15,10,10);
 
     }
 

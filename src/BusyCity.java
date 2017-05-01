@@ -9,6 +9,7 @@ public class BusyCity extends JFrame {
         setTitle("Busy City");
         setSize(1600,900);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         setVisible(true);
 
         add(new Pedestrians());
