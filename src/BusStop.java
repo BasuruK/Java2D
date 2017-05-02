@@ -33,13 +33,19 @@ public class BusStop extends Cars{
         string1.addAttribute(TextAttribute.FOREGROUND, Color.black,0,8);
         g2d.drawString(string1.getIterator(),1138,510);
 
-
+        //Initiate Street Lights
         for(int i = 0;i < 9;i++)
         {
             drawStreetLight(32 + ( i * 200 ),g);
         }
 
-
+        //Initiate Bus Stop sign
+        g2d.setPaint(new Color(40, 39, 39));
+        g2d.fillRect(1280,520,5,60);
+        g2d.setPaint(new Color(255, 252, 0));
+        g2d.fillRect(1275,510,15,15);
+        g2d.setPaint(new Color(0x000000));
+        g2d.fillRect(1279,515,8,5);
     }
 
     public void drawStreetLight(int x, Graphics g)

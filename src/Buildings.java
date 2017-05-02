@@ -25,13 +25,25 @@ public class Buildings extends Sky {
         g2d.fill3DRect(x,190,250,h,true);
 
         //Initialize Windows
+        Random randint = new Random();
         g2d.setPaint(new Color(0xFFFCD7));
         for(int i = 0;i < (h/30) - 5; i++)
         {
-            for(int j = 0; j < 4; j++)
+            if (randint.nextInt() > 5)
             {
-                g2d.fillRect((x+10) + (j * 65),230 + (i * 45),30,30);
+                for(int j = 0; j < 4; j++)
+                {
+                    g2d.fillRect((x+10) + (j * 65),230 + (i * 45),30,30);
+                }
             }
+            else
+            {
+                for(int j = 0; j < 4; j++)
+                {
+                    g2d.fillRect((x+10) + (j * 65),230 + (i * 45),30,40);
+                }
+            }
+
 
         }
     }
